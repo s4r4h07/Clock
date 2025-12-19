@@ -17,10 +17,11 @@ function updateTime() {
   let ampm = hours24 >= 12 ? "PM" : "AM";
   let hours12 = hours24 % 12 || 12;
 
-timeEl.innerText =
+  timeEl.innerText =
   zeroPadding(hours12, 2) + ":" +
   zeroPadding(now.getMinutes(), 2) + ":" +
   zeroPadding(now.getSeconds(), 2) + " " + ampm;
+  
   dateEl.innerText =
     now.getFullYear() + "-" +
     zeroPadding(now.getMonth() + 1, 2) + "-" +
