@@ -1,6 +1,4 @@
 let is24Hour = True
-let hours = now.getHours();
-if (!is24Hour) hours = hours % 12 || 12;
 
 const WEEK = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
@@ -13,9 +11,11 @@ function updateTime() {
 
 	const timeEL = document.getElementById("time");
 	const dateEl = document.getElementById("date");
-
 	if (!timeEl || !dateEl) return;
-
+	
+	let hours = now.getHours();
+	if (!is24Hour) hours = hours % 12 || 12;
+	
 	timeEl.innerText = 
 		zeroPadding(now.getHours(), 2) + ":" +
 		zeroPadding(now.getMinutes(), 2) + ":" +
