@@ -33,8 +33,6 @@ window.addEventListener("DOMContentLoaded", () => {
   setInterval(updateTime, 1000);
 });
 
-// so the button can call it
-window.toggleClockFormat = () => {
-  is24Hour = !is24Hour;
-  updateTime();
+window.toggleTheme = () => {
+  document.body.classList.toggle("light");
 };
