@@ -19,6 +19,9 @@
       color: #e6f1ff;
       font-family: 'Inter', system-ui, sans-serif;
 }
+    body.light {
+      background: radial-gradient(circle at top, #ffffff, #dbe7ff);
+      color: #0b1220;
     }
     .clock { 
       letter-spacing: 2px;
@@ -44,7 +47,7 @@
     <p id="date"></p>
     <p id="time"></p>
     <button onclick="toggleClockFormat()">Toggle 12 / 24</button>  
-    <button class="toggle"> Dark Mode</button>  
+    <button onclick="toggleTheme()" class="toggle"> Dark/Light</button>  
   </div>
 </body>
 </html>
