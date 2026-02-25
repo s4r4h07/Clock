@@ -2,9 +2,8 @@
 
 A digital clock with a dark/light mode
 
-## 🌐 Live Demo
-👉 https://hafsah1-coder.github.io/Clock/
-
+## 🌐 URL
+👉 [Clock](https://s4r4h07.github.io/Clock/)
 ## ✨ Features
 - Real-time digital clock (updates every second)
 - 12-hour format with AM / PM
